@@ -6,118 +6,126 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Vibrant Dark Theme Overrides */
+			/* Vibrant Slate & Moss Theme Overrides */
 			body {
-				background-color: #1e2220 !important; /* Soft Slate Gray */
-				color: #e0e5e2 !important;
+				background-color: #f0f2f1 !important; /* Light neutral base */
+				color: #334139 !important;
 			}
 
 			/* Header & Nav */
 			#header {
-				background: #161a18 !important;
-				border-bottom: solid 2px #2d3832;
+				background: #ffffff !important;
+				border-bottom: solid 4px #2d5a42; /* Deep Moss Green */
 			}
 
 			#header .logo div {
-				background: #161a18 !important;
+				background: #ffffff !important;
 			}
 
 			#header .logo h1 a {
-				color: #4ade80 !important; /* Vibrant Emerald Green */
-				text-shadow: 0 0 10px rgba(74, 222, 128, 0.2);
+				color: #166534 !important; /* Rich Forest Green */
+				font-weight: 800;
 			}
 
 			#header .logo p {
-				color: #94a3b8 !important; /* Muted Slate Blue/Gray */
+				color: #64748b !important;
 			}
 
 			#nav {
-				background-color: rgba(22, 26, 24, 0.95) !important;
-				border-bottom: 1px solid #2d3832;
+				background-color: rgba(255, 255, 255, 0.95) !important;
+				border-bottom: 1px solid #e2e8f0;
 			}
 
 			#nav li a {
-				color: #cbd5e1 !important;
+				color: #334139 !important;
 			}
 
 			#nav li.current a {
-				background: #064e3b !important; /* Deep Forest Green */
-				color: #ecfdf5 !important;
+				background: #22c55e !important; /* Vibrant Emerald */
+				color: #ffffff !important;
 			}
 
-			/* Hero Area */
+			/* Hero Area - Mid-tone Green */
 			#banner {
-				background: none !important;
-				padding: 5em 0 !important;
+				background: #2d5a42 !important; /* Moss Green Background */
+				padding: 4em 0 !important;
 			}
 
 			#banner .content {
-				background-color: #0f1714 !important; /* Very Deep Green */
-				border-top: solid 3px #10b981; /* Vibrant Accent Green */
-				border-bottom: solid 3px #10b981;
-				box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+				background-color: rgba(255, 255, 255, 0.05) !important;
+				border-top: solid 2px rgba(255,255,255,0.2);
+				border-bottom: solid 2px rgba(255,255,255,0.2);
 			}
 
-			#banner h2 { color: #fff !important; }
-			#banner p { color: #d1fae5 !important; }
+			#banner h2 { color: #ffffff !important; }
+			#banner p { color: #bbf7d0 !important; }
 
 			.button {
-				background: #10b981 !important;
-				color: #064e3b !important;
-				box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+				background: #22c55e !important;
+				color: #ffffff !important;
+				border-radius: 6px !important;
 			}
 
-			/* Main Content */
+			/* Main Content - Slate Gray Background */
 			#main {
-				background: #1e2220 !important;
-				border-top: solid 35px #161a18 !important;
-				border-bottom: solid 10px #161a18 !important;
+				background: #e2e8f0 !important; /* Soft Slate Gray */
+				border-top: solid 35px #ffffff !important;
+				border-bottom: solid 10px #ffffff !important;
+				padding: 4em 0 !important;
 			}
 
 			.box.features h2.major span {
-				background: #1e2220 !important;
-				color: #4ade80 !important;
+				background: #e2e8f0 !important;
+				color: #166534 !important;
 			}
 
 			.box.features h2.major {
-				border-top-color: #2d3832 !important;
+				border-top-color: #cbd5e1 !important;
+			}
+
+			/* Feature Cards */
+			.box.feature {
+				background: #ffffff !important;
+				padding: 2em !important;
+				border-radius: 12px !important;
+				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 			}
 
 			h3 a {
-				color: #f8fafc !important;
+				color: #166534 !important;
+				text-decoration: none !important;
 			}
 
-			/* SVG Icon Styling - Vibrant Style */
+			/* SVG Icon Styling - Vibrant Multi-tone */
 			.featured-svg {
-				background: linear-gradient(145deg, #242b27, #1b201e) !important;
-				border: 1px solid #334139 !important;
+				background: #f8fafc !important;
+				border: 1px solid #e2e8f0 !important;
 				border-radius: 12px;
 				display: block;
 				width: 100%;
 				height: auto;
 				padding: 25px;
-				transition: transform 0.3s ease;
-			}
-
-			.box.feature:hover .featured-svg {
-				transform: translateY(-5px);
-				border-color: #10b981 !important;
+				margin-bottom: 1.5em;
 			}
 
 			.featured-svg-stroke {
-				stroke: #10b981 !important; /* Vibrant stroke */
+				stroke: #22c55e !important;
 				stroke-width: 1.5;
-				filter: drop-shadow(0 0 5px rgba(16, 185, 129, 0.5));
+			}
+
+			.featured-svg-fill {
+				fill: #dcfce7 !important;
 			}
 
 			/* Footer */
 			#footer {
-				background: #161a18 !important;
+				background: #ffffff !important;
+				color: #475569 !important;
 			}
 
 			#copyright {
-				background: #111412 !important;
-				border: 1px solid #2d3832;
+				background: #f1f5f9 !important;
+				border: 1px solid #e2e8f0;
 			}
 		</style>
 	</head>
@@ -155,7 +163,7 @@
 			<section id="banner">
 					<div class="content">
 						<h2>Welcome to The Dragon</h2>
-						<p>Pull up a bench, grab a deck, and join our community.</p>
+						<p>Gather your party and pull up a bench at the Shire's finest gaming hub.</p>
 						<a href="#main" class="button scrolly">View Event Calendar</a>
 					</div>
 				</section>
@@ -173,53 +181,53 @@
 													<section class="box feature">
 														<a href="#" class="image featured">
 															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																<rect class="featured-svg-stroke" x="4" y="2" width="16" height="20" rx="2"></rect>
+																<rect class="featured-svg-stroke featured-svg-fill" x="4" y="2" width="16" height="20" rx="2"></rect>
 																<path class="featured-svg-stroke" d="M4 7h16"></path>
 																<path class="featured-svg-stroke" d="M12 11l4 4-4 4-4-4 4-4z"></path>
 															</svg>
 														</a>
 														<h3><a href="#">TCG Products</a></h3>
-														<p>Sealed booster boxes, elite kits, and decks for all major games.</p>
+														<p>Sealed booster boxes, elite kits, and decks for all major card games.</p>
 													</section>
 												</div>
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
 															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																<path class="featured-svg-stroke" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+																<path class="featured-svg-stroke featured-svg-fill" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
 																<polyline class="featured-svg-stroke" points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
 																<line class="featured-svg-stroke" x1="12" y1="22.08" x2="12" y2="12"></line>
 															</svg>
 														</a>
 														<h3><a href="#">Board Games</a></h3>
-														<p>A curated selection of strategy and classic tabletop titles.</p>
+														<p>A curated selection of strategy, party, and classic tabletop titles.</p>
 													</section>
 												</div>
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
 															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																<circle class="featured-svg-stroke" cx="12" cy="12" r="10"></circle>
+																<circle class="featured-svg-stroke featured-svg-fill" cx="12" cy="12" r="10"></circle>
 																<line class="featured-svg-stroke" x1="12" y1="8" x2="12" y2="16"></line>
 																<line class="featured-svg-stroke" x1="8" y1="12" x2="16" y2="12"></line>
 															</svg>
 														</a>
 														<h3><a href="#">Buy Singles</a></h3>
-														<p>Individual cards updated daily with competitive staples.</p>
+														<p>Individual cards updated daily with the latest competitive staples.</p>
 													</section>
 												</div>
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
 															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
-																<path class="featured-svg-stroke" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+																<path class="featured-svg-stroke featured-svg-fill" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
 																<circle class="featured-svg-stroke" cx="9" cy="7" r="4"></circle>
 																<path class="featured-svg-stroke" d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
 																<path class="featured-svg-stroke" d="M16 3.13a4 4 0 0 1 0 7.75"></path>
 															</svg>
 														</a>
 														<h3><a href="#">Community Events</a></h3>
-														<p>View our full schedule and book your seat at the table.</p>
+														<p>View our full schedule and book your seat at the gaming table.</p>
 													</section>
 												</div>
 											</div>
