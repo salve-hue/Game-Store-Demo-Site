@@ -3105,3 +3105,15 @@ input, select, textarea {
 			}
 
 	}
+
+/* Custom Override for The Dragon's Hoard Hero Area */
+#banner {
+    background: none !important; /* Removes the pinkish/overlay background */
+    padding: 2em 0 !important;   /* Reduces the vertical space around the center bar */
+}
+
+#banner .content {
+    background-color: rgba(21, 28, 23, 0.95) !important; /* Keeps the center bar dark and legible */
+    border-top: solid 2px #b1ddab; /* Optional: adds a thematic green border */
+    border-bottom: solid 2px #b1ddab;
+}
