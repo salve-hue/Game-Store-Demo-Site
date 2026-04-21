@@ -6,25 +6,106 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Custom Fix for the Hero Background and SVG consistency */
+			/* Dark Mode Overrides */
+			body {
+				background-color: #1a1e1b !important; /* Deep forest charcoal */
+				color: #d1d1d1 !important;
+			}
+
+			#header {
+				background: #121512 !important;
+				border-bottom: solid 1px #2d352e;
+			}
+
+			#header .logo {
+				border-top-color: #2d352e !important;
+			}
+
+			#header .logo div {
+				background: #121512 !important;
+			}
+
+			#header .logo h1 a, #header .logo p {
+				color: #e8e8e8 !important;
+			}
+
+			#nav {
+				background-color: rgba(18, 21, 18, 0.95) !important;
+				border-bottom: 1px solid #2d352e;
+			}
+
+			#nav li a {
+				color: #b1ddab !important;
+			}
+
+			#nav li.current a {
+				background: #2d352e !important;
+				color: #fff !important;
+			}
+
+			/* Hero Area */
 			#banner {
 				background: none !important;
-				background-color: transparent !important;
 				padding: 4em 0 !important;
 			}
+
 			#banner .content {
-				background-color: rgba(21, 28, 23, 0.95) !important;
+				background-color: rgba(10, 12, 10, 0.9) !important;
 				border-top: solid 2px #b1ddab;
 				border-bottom: solid 2px #b1ddab;
 			}
+
+			#banner h2 { color: #fff !important; }
+			#banner p { color: #b1ddab !important; }
+
+			/* Main Content Area */
+			#main {
+				background: #1a1e1b !important;
+				border-top: solid 35px #121512 !important;
+				border-bottom: solid 10px #121512 !important;
+			}
+
+			.box.features h2.major span {
+				background: #1a1e1b !important;
+				color: #fff !important;
+			}
+
+			.box.features h2.major {
+				border-top-color: #2d352e !important;
+			}
+
+			h3 a {
+				color: #b1ddab !important;
+			}
+
+			.box.feature p {
+				color: #a0a0a0 !important;
+			}
+
+			/* SVG Icon Styling for Dark Mode */
 			.featured-svg {
-				background: #f4f4f4;
-				border: 1px solid #e0e0e0;
+				background: #2d352e !important; /* Slightly lighter than background */
+				border: 1px solid #3d473e !important;
 				border-radius: 8px;
 				display: block;
 				width: 100%;
 				height: auto;
 				padding: 25px;
+			}
+
+			.featured-svg-stroke {
+				stroke: #b1ddab !important; /* Thematic Green */
+			}
+
+			/* Footer */
+			#footer {
+				background: #121512 !important;
+				color: #888 !important;
+			}
+
+			#copyright {
+				background: #1a1e1b !important;
+				color: #666 !important;
 			}
 		</style>
 	</head>
@@ -79,10 +160,10 @@
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
-															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke="#6b7770" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-																<rect x="4" y="2" width="16" height="20" rx="2"></rect>
-																<path d="M4 7h16"></path>
-																<path d="M12 11l4 4-4 4-4-4 4-4z"></path>
+															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+																<rect class="featured-svg-stroke" x="4" y="2" width="16" height="20" rx="2"></rect>
+																<path class="featured-svg-stroke" d="M4 7h16"></path>
+																<path class="featured-svg-stroke" d="M12 11l4 4-4 4-4-4 4-4z"></path>
 															</svg>
 														</a>
 														<h3><a href="#">TCG Products</a></h3>
@@ -92,10 +173,10 @@
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
-															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke="#6b7770" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-																<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-																<polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-																<line x1="12" y1="22.08" x2="12" y2="12"></line>
+															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+																<path class="featured-svg-stroke" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+																<polyline class="featured-svg-stroke" points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+																<line class="featured-svg-stroke" x1="12" y1="22.08" x2="12" y2="12"></line>
 															</svg>
 														</a>
 														<h3><a href="#">Board Games</a></h3>
@@ -105,10 +186,10 @@
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
-															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke="#6b7770" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-																<circle cx="12" cy="12" r="10"></circle>
-																<line x1="12" y1="8" x2="12" y2="16"></line>
-																<line x1="8" y1="12" x2="16" y2="12"></line>
+															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+																<circle class="featured-svg-stroke" cx="12" cy="12" r="10"></circle>
+																<line class="featured-svg-stroke" x1="12" y1="8" x2="12" y2="16"></line>
+																<line class="featured-svg-stroke" x1="8" y1="12" x2="16" y2="12"></line>
 															</svg>
 														</a>
 														<h3><a href="#">Buy Singles</a></h3>
@@ -118,11 +199,11 @@
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
-															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke="#6b7770" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-																<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-																<circle cx="9" cy="7" r="4"></circle>
-																<path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-																<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+																<path class="featured-svg-stroke" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+																<circle class="featured-svg-stroke" cx="9" cy="7" r="4"></circle>
+																<path class="featured-svg-stroke" d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+																<path class="featured-svg-stroke" d="M16 3.13a4 4 0 0 1 0 7.75"></path>
 															</svg>
 														</a>
 														<h3><a href="#">Community Events</a></h3>
