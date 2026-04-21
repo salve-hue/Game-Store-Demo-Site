@@ -6,16 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Vibrant Light Theme Overrides */
+			/* High Contrast Vibrant Theme Overrides */
 			body {
-				background-color: #f8faf9 !important; /* Brighter, cleaner base */
-				color: #2d3832 !important;
+				background-color: #f8faf9 !important; 
+				color: #1a201c !important; /* Darkened from #2d3832 for better legibility */
 			}
 
 			/* Header & Nav */
 			#header {
 				background: #ffffff !important;
-				border-bottom: solid 4px #3a634e !important; /* Moss Green */
+				border-bottom: solid 4px #1b4332 !important; 
 			}
 
 			#header .logo div {
@@ -23,8 +23,17 @@
 			}
 
 			#header .logo h1 a {
-				color: #1b4332 !important; /* Forest Green */
+				color: #0d2818 !important; /* Deepest Forest Green */
 				font-weight: 800;
+			}
+
+			#header .logo p {
+				color: #334155 !important; /* Darker slate for the tagline */
+			}
+
+			#nav li a {
+				color: #0d2818 !important; /* Higher contrast nav links */
+				font-weight: 700;
 			}
 
 			#nav li.current a {
@@ -34,9 +43,9 @@
 
 			/* Hero Area */
 			#banner {
-				background: #3a634e !important; /* Solid Moss Green */
+				background: #1b4332 !important; /* Darker moss green for better text contrast */
 				padding: 5em 0 !important;
-				border-bottom: 5px solid #2d4a3b;
+				border-bottom: 5px solid #0d2818;
 			}
 
 			#banner .content {
@@ -44,49 +53,64 @@
 				border: none !important;
 			}
 
-			#banner h2 { color: #ffffff !important; }
-			#banner p { color: #d8f3dc !important; }
+			#banner h2 { 
+				color: #ffffff !important;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+			}
+			#banner p { 
+				color: #ecfdf5 !important; /* Brighter mint for legibility on dark green */
+				font-weight: 600;
+			}
 
 			/* THE STAND-OUT BUTTON */
 			.button.scrolly {
-				background: #ffc300 !important; /* Vibrant Gold */
-				color: #1b4332 !important; /* Dark Green Text */
+				background: #ffc300 !important; 
+				color: #0d2818 !important; 
 				font-weight: 900 !important;
-				border: 2px solid #ffffff !important;
-				box-shadow: 0 0 20px rgba(255, 195, 0, 0.4);
+				border: 2px solid #0d2818 !important;
+				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 				transition: all 0.3s ease !important;
-				transform: scale(1.1); /* Slightly larger to stand out */
 			}
 
 			.button.scrolly:hover {
 				background: #ffffff !important;
-				box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
-				transform: scale(1.15);
+				box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+				transform: translateY(-2px);
 			}
 
 			/* Main Content */
 			#main {
-				background: #f0f4f2 !important; /* Soft light gray-green */
+				background: #f0f4f2 !important; 
 				border-top: solid 35px #ffffff !important;
 				border-bottom: solid 10px #ffffff !important;
 			}
 
 			.box.features h2.major span {
 				background: #f0f4f2 !important;
-				color: #1b4332 !important;
+				color: #0d2818 !important;
 			}
 
 			.box.feature {
 				background: #ffffff !important;
 				border-radius: 10px !important;
-				padding: 2em !important;
-				box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+				padding: 2.5em !important;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+			}
+
+			.box.feature h3 a {
+				color: #1b4332 !important;
+				font-weight: 800;
+			}
+
+			.box.feature p {
+				color: #2d3832 !important; /* Darkened descriptive text */
+				line-height: 1.6;
 			}
 
 			/* Icons */
 			.featured-svg {
-				background: #e9f5ee !important;
-				border: 1px solid #cce3d6 !important;
+				background: #f1f8f4 !important;
+				border: 2px solid #d1e7dd !important;
 				border-radius: 12px;
 				display: block;
 				width: 100%;
@@ -96,18 +120,20 @@
 			}
 
 			.featured-svg-stroke {
-				stroke: #2d6a4f !important;
-				stroke-width: 1.5;
+				stroke: #1b4332 !important;
+				stroke-width: 2; /* Slightly thicker for visibility */
 			}
 
-			/* Footer Cleanup */
+			/* Footer */
 			#footer {
 				background: #ffffff !important;
-				border-top: 1px solid #d8f3dc;
+				border-top: 1px solid #d1e7dd;
 			}
 
 			#copyright {
 				background: #f8faf9 !important;
+				color: #1a201c !important;
+				font-weight: 600;
 			}
 		</style>
 	</head>
