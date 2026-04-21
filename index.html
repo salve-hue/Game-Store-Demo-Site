@@ -6,13 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* High Contrast Vibrant Theme Overrides */
+			/* Accented Vibrant Theme Overrides */
 			body {
 				background-color: #f8faf9 !important; 
-				color: #1a201c !important; /* Darkened from #2d3832 for better legibility */
+				color: #1a201c !important; 
 			}
 
-			/* Header & Nav */
+			/* Header remains clean and light */
 			#header {
 				background: #ffffff !important;
 				border-bottom: solid 4px #1b4332 !important; 
@@ -23,17 +23,23 @@
 			}
 
 			#header .logo h1 a {
-				color: #0d2818 !important; /* Deepest Forest Green */
+				color: #0d2818 !important; 
 				font-weight: 800;
 			}
 
-			#header .logo p {
-				color: #334155 !important; /* Darker slate for the tagline */
+			/* DARK MODE ACCENT: Navigation Bar */
+			#nav {
+				background-color: #1b4332 !important; /* Deep Forest Green Accent */
+				box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 			}
 
 			#nav li a {
-				color: #0d2818 !important; /* Higher contrast nav links */
+				color: #ffffff !important; /* High contrast for dark background */
 				font-weight: 700;
+			}
+
+			#nav li:hover a {
+				background: #2d6a4f !important;
 			}
 
 			#nav li.current a {
@@ -43,7 +49,7 @@
 
 			/* Hero Area */
 			#banner {
-				background: #1b4332 !important; /* Darker moss green for better text contrast */
+				background: #1b4332 !important; 
 				padding: 5em 0 !important;
 				border-bottom: 5px solid #0d2818;
 			}
@@ -58,24 +64,17 @@
 				text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 			}
 			#banner p { 
-				color: #ecfdf5 !important; /* Brighter mint for legibility on dark green */
+				color: #ecfdf5 !important;
 				font-weight: 600;
 			}
 
-			/* THE STAND-OUT BUTTON */
+			/* High-Contrast Stand-out Button */
 			.button.scrolly {
 				background: #ffc300 !important; 
 				color: #0d2818 !important; 
 				font-weight: 900 !important;
 				border: 2px solid #0d2818 !important;
 				box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-				transition: all 0.3s ease !important;
-			}
-
-			.button.scrolly:hover {
-				background: #ffffff !important;
-				box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-				transform: translateY(-2px);
 			}
 
 			/* Main Content */
@@ -90,22 +89,47 @@
 				color: #0d2818 !important;
 			}
 
+			/* Interactive Cards */
 			.box.feature {
 				background: #ffffff !important;
 				border-radius: 10px !important;
 				padding: 2.5em !important;
-				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+				transition: all 0.3s ease;
+				border: 1px solid transparent;
 			}
 
-			.box.feature h3 a {
-				color: #1b4332 !important;
-				font-weight: 800;
+			.box.feature:hover {
+				transform: translateY(-5px);
+				border-color: #1b4332;
+				box-shadow: 0 8px 24px rgba(27, 67, 50, 0.15);
 			}
 
-			.box.feature p {
-				color: #2d3832 !important; /* Darkened descriptive text */
-				line-height: 1.6;
+			/* DARK MODE ACCENT: Footer */
+			#footer {
+				background: #1b4332 !important; /* Deep Forest Green Accent */
+				color: #ecfdf5 !important;
+				padding: 4em 0 !important;
 			}
+
+			#footer h2.major span {
+				background: #1b4332 !important;
+				color: #ffffff !important;
+			}
+
+			#footer a {
+				color: #ffc300 !important; /* Gold links in footer */
+			}
+
+			/* DARK MODE ACCENT: Copyright */
+			#copyright {
+				background: #0d2818 !important; /* Deeper Green Accent */
+				color: #ffffff !important;
+				padding: 1.5em 0 !important;
+				border: none !important;
+			}
+
+			#copyright a { color: #22c55e !important; }
 
 			/* Icons */
 			.featured-svg {
@@ -121,19 +145,7 @@
 
 			.featured-svg-stroke {
 				stroke: #1b4332 !important;
-				stroke-width: 2; /* Slightly thicker for visibility */
-			}
-
-			/* Footer */
-			#footer {
-				background: #ffffff !important;
-				border-top: 1px solid #d1e7dd;
-			}
-
-			#copyright {
-				background: #f8faf9 !important;
-				color: #1a201c !important;
-				font-weight: 600;
+				stroke-width: 2;
 			}
 		</style>
 	</head>
