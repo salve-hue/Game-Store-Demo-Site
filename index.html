@@ -6,106 +6,118 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Dark Mode Overrides */
+			/* Vibrant Dark Theme Overrides */
 			body {
-				background-color: #1a1e1b !important; /* Deep forest charcoal */
-				color: #d1d1d1 !important;
+				background-color: #1e2220 !important; /* Soft Slate Gray */
+				color: #e0e5e2 !important;
 			}
 
+			/* Header & Nav */
 			#header {
-				background: #121512 !important;
-				border-bottom: solid 1px #2d352e;
-			}
-
-			#header .logo {
-				border-top-color: #2d352e !important;
+				background: #161a18 !important;
+				border-bottom: solid 2px #2d3832;
 			}
 
 			#header .logo div {
-				background: #121512 !important;
+				background: #161a18 !important;
 			}
 
-			#header .logo h1 a, #header .logo p {
-				color: #e8e8e8 !important;
+			#header .logo h1 a {
+				color: #4ade80 !important; /* Vibrant Emerald Green */
+				text-shadow: 0 0 10px rgba(74, 222, 128, 0.2);
+			}
+
+			#header .logo p {
+				color: #94a3b8 !important; /* Muted Slate Blue/Gray */
 			}
 
 			#nav {
-				background-color: rgba(18, 21, 18, 0.95) !important;
-				border-bottom: 1px solid #2d352e;
+				background-color: rgba(22, 26, 24, 0.95) !important;
+				border-bottom: 1px solid #2d3832;
 			}
 
 			#nav li a {
-				color: #b1ddab !important;
+				color: #cbd5e1 !important;
 			}
 
 			#nav li.current a {
-				background: #2d352e !important;
-				color: #fff !important;
+				background: #064e3b !important; /* Deep Forest Green */
+				color: #ecfdf5 !important;
 			}
 
 			/* Hero Area */
 			#banner {
 				background: none !important;
-				padding: 4em 0 !important;
+				padding: 5em 0 !important;
 			}
 
 			#banner .content {
-				background-color: rgba(10, 12, 10, 0.9) !important;
-				border-top: solid 2px #b1ddab;
-				border-bottom: solid 2px #b1ddab;
+				background-color: #0f1714 !important; /* Very Deep Green */
+				border-top: solid 3px #10b981; /* Vibrant Accent Green */
+				border-bottom: solid 3px #10b981;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 			}
 
 			#banner h2 { color: #fff !important; }
-			#banner p { color: #b1ddab !important; }
+			#banner p { color: #d1fae5 !important; }
 
-			/* Main Content Area */
+			.button {
+				background: #10b981 !important;
+				color: #064e3b !important;
+				box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+			}
+
+			/* Main Content */
 			#main {
-				background: #1a1e1b !important;
-				border-top: solid 35px #121512 !important;
-				border-bottom: solid 10px #121512 !important;
+				background: #1e2220 !important;
+				border-top: solid 35px #161a18 !important;
+				border-bottom: solid 10px #161a18 !important;
 			}
 
 			.box.features h2.major span {
-				background: #1a1e1b !important;
-				color: #fff !important;
+				background: #1e2220 !important;
+				color: #4ade80 !important;
 			}
 
 			.box.features h2.major {
-				border-top-color: #2d352e !important;
+				border-top-color: #2d3832 !important;
 			}
 
 			h3 a {
-				color: #b1ddab !important;
+				color: #f8fafc !important;
 			}
 
-			.box.feature p {
-				color: #a0a0a0 !important;
-			}
-
-			/* SVG Icon Styling for Dark Mode */
+			/* SVG Icon Styling - Vibrant Style */
 			.featured-svg {
-				background: #2d352e !important; /* Slightly lighter than background */
-				border: 1px solid #3d473e !important;
-				border-radius: 8px;
+				background: linear-gradient(145deg, #242b27, #1b201e) !important;
+				border: 1px solid #334139 !important;
+				border-radius: 12px;
 				display: block;
 				width: 100%;
 				height: auto;
 				padding: 25px;
+				transition: transform 0.3s ease;
+			}
+
+			.box.feature:hover .featured-svg {
+				transform: translateY(-5px);
+				border-color: #10b981 !important;
 			}
 
 			.featured-svg-stroke {
-				stroke: #b1ddab !important; /* Thematic Green */
+				stroke: #10b981 !important; /* Vibrant stroke */
+				stroke-width: 1.5;
+				filter: drop-shadow(0 0 5px rgba(16, 185, 129, 0.5));
 			}
 
 			/* Footer */
 			#footer {
-				background: #121512 !important;
-				color: #888 !important;
+				background: #161a18 !important;
 			}
 
 			#copyright {
-				background: #1a1e1b !important;
-				color: #666 !important;
+				background: #111412 !important;
+				border: 1px solid #2d3832;
 			}
 		</style>
 	</head>
@@ -160,46 +172,46 @@
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
-															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
 																<rect class="featured-svg-stroke" x="4" y="2" width="16" height="20" rx="2"></rect>
 																<path class="featured-svg-stroke" d="M4 7h16"></path>
 																<path class="featured-svg-stroke" d="M12 11l4 4-4 4-4-4 4-4z"></path>
 															</svg>
 														</a>
 														<h3><a href="#">TCG Products</a></h3>
-														<p>Sealed booster boxes, elite kits, and starter decks for all major card games.</p>
+														<p>Sealed booster boxes, elite kits, and decks for all major games.</p>
 													</section>
 												</div>
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
-															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
 																<path class="featured-svg-stroke" d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
 																<polyline class="featured-svg-stroke" points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
 																<line class="featured-svg-stroke" x1="12" y1="22.08" x2="12" y2="12"></line>
 															</svg>
 														</a>
 														<h3><a href="#">Board Games</a></h3>
-														<p>A curated selection of strategy, party, and classic tabletop titles for all ages.</p>
+														<p>A curated selection of strategy and classic tabletop titles.</p>
 													</section>
 												</div>
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
-															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
 																<circle class="featured-svg-stroke" cx="12" cy="12" r="10"></circle>
 																<line class="featured-svg-stroke" x1="12" y1="8" x2="12" y2="16"></line>
 																<line class="featured-svg-stroke" x1="8" y1="12" x2="16" y2="12"></line>
 															</svg>
 														</a>
 														<h3><a href="#">Buy Singles</a></h3>
-														<p>Find individual cards for your deck with our easy-to-use search and filter system.</p>
+														<p>Individual cards updated daily with competitive staples.</p>
 													</section>
 												</div>
 												<div class="col-3 col-6-medium col-12-small">
 													<section class="box feature">
 														<a href="#" class="image featured">
-															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+															<svg class="featured-svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
 																<path class="featured-svg-stroke" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
 																<circle class="featured-svg-stroke" cx="9" cy="7" r="4"></circle>
 																<path class="featured-svg-stroke" d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -207,7 +219,7 @@
 															</svg>
 														</a>
 														<h3><a href="#">Community Events</a></h3>
-														<p>Check the schedule for tournaments, learn-to-play days, and casual game nights.</p>
+														<p>View our full schedule and book your seat at the table.</p>
 													</section>
 												</div>
 											</div>
